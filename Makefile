@@ -21,8 +21,8 @@ FFASTER_INCLUDES = -I${FFASTER_DIR}/include -L${FFASTER_DIR}/lib -lffaster
 
 # compiler flags
 # --compiler-options -Wall
-NVCC_COMP_FLAGS = -arch=sm_81
-NVCC_FFA_COMP_FLAGS = -arch=sm_81
+NVCC_COMP_FLAGS = -arch=sm_89
+NVCC_FFA_COMP_FLAGS = -arch=sm_89
 NVCCFLAGS  = ${UCFLAGS} ${OPTIMISE} ${NVCC_COMP_FLAGS} -lineinfo --machine 64 -Xcompiler ${DEBUG}
 NVCCFLAGS_FFA  = ${UCFLAGS} ${OPTIMISE} ${NVCC_FFA_COMP_FLAGS} -lineinfo --machine 64 -Xcompiler ${DEBUG}
 CFLAGS    = ${UCFLAGS} -fPIC ${OPTIMISE} ${DEBUG}
